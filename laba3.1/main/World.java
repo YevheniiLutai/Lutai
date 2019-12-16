@@ -21,7 +21,7 @@ public class World
     }
 
     public static String join(Collection<String> s, String delimiter) {
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
         Iterator<String> iter = s.iterator();
         while (iter.hasNext()) {
             buffer.append(iter.next());

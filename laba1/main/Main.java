@@ -1,13 +1,17 @@
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Main {
 	public static int first_set[] = {1, 2, 3};
 	public static int second_set[] = {4, 5, 6};
 	public static int third_set[] = {7, 8, 9};
 
-	public static void main(String[] args) {
-		System.out.println("Список вопросов:");
+	Logger logger = Logger.getLogger(Main.class.getName());
+	public void main(String[] args) {
+		logger.log(Level.INFO,"Список вопросов:");
 		int ticket[] = Main.ticket();
 		for (int i = 0; i < 3; i++) {
-			System.out.println(ticket[i]);
+			logger.log(Level.INFO, String.valueOf(ticket[i]));
 		}
 	}
 

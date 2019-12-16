@@ -3,10 +3,10 @@ import java.util.HashMap;
 
 public class World3 {
     public static void main(String[] args) {
-        String Str1 = new String("GHhghg");
-        String Str2 = new String("hfh");
-        String Str3 = new String("hk");
-        String Str4 = new String("ds");
+        String Str1 = "GHhghg";
+        String Str2 = "hfh";
+        String Str3 = "hk";
+        String Str4 = "ds";
         HashMap<String, Integer> map = new HashMap<String, Integer>();
         map.put(Str1, Str1.length());
         map.put(Str2, Str2.length());
