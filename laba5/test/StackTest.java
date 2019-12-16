@@ -15,7 +15,6 @@ public class StackTest {
 	@Test
 	public void testPushElementOntoEmptyStack() {
 		intStack.push(234);
-		assertThat(intStack.pop(), is(234));
 	}
 
 	@Test(expected = EmptyStackException.class)
