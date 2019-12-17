@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.util.TreeMap;
 import java.util.function.*;
 
 public class CrazyLambdas {
@@ -122,7 +121,8 @@ public class CrazyLambdas {
      *
      * @return a runnable consumer
      */
-    public static Consumer<Runnable> newThreadRunnableConsumer() {
+    public static Consumer<Runnable> newThreadRunnableConsumer()
+	{
         return x -> x.run();
     }
 
